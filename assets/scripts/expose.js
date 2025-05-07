@@ -2,7 +2,6 @@
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
-  console.log("JS loaded and running!");
   const hornSelect = document.getElementById('horn-select')
   const image = document.querySelector('#expose img')
   const button = document.querySelector('#expose button')
@@ -53,7 +52,7 @@ function init() {
     if (audio.src){
       audio.play()
     }
-    if (hornSelect==='party-horn'){
+    if (hornSelect.value==='party-horn'){
       jsConfetti.addConfetti()
     }
   })
